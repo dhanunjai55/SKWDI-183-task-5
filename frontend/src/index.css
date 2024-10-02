@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --defaultColor: whitesmoke;
+  --mainColor: #2563eb;
+  --lightMainColor: #95c7ff;
+  --secondaryColor: #f7f7f7;
+  --blackColor: #000;
+}
+
+@layer base {
+  @font-face {
+    font-family: MarketSansRegular;
+    src: url("./assets/fonts/MarketSans-Regular-WebS.woff2");
+    font-weight: normal;
+    font-size: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: MarketSansSemiBold;
+    src: url("./assets/fonts/MarketSans-SemiBold-WebS.woff2");
+    font-weight: normal;
+    font-size: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: CircularXXWebBook;
+    src: url("./assets/fonts/CircularXXWeb-Book.woff2");
+    font-weight: normal;
+    font-size: normal;
+    font-display: swap;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--defaultColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blackColor);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mainColor);
+}
+
+body {
+  font-family: MarketSansRegular, ui-serif, Georgia;
+  background-color: var(--defaultColor);
+}
+
+button {
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif !important;
+}
+
+/* ##### Home ##### */
+/* Swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-1 {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 35%;
+  background-image: url("./assets/images/boat-parts.jpg");
+}
+.swiper-2 {
+  background-color: var(--secondaryColor);
+}
+.swiper-3 {
+  width: 100%;
+  background-size: cover;
+  background-position: center 75%;
+  background-repeat: no-repeat;
+  background-image: url("./assets/images/clothing.jpg");
+}
+.swiper-4 {
+  background-color: var(--lightMainColor);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: var(--blackColor);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.swiper-button-prev {
+  margin-left: -5px;
+}
+.swiper-button-next {
+  margin-right: -5px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 15px;
+  color: var(--defaultColor);
+  font-weight: bold;
+}
+
+.barner-1 {
+  width: 100%;
+  background-size: cover;
+  background-position: center 75%;
+  background-repeat: no-repeat;
+  background-image: url("./assets/images/barner-1.jpg");
+}
